@@ -1,0 +1,7 @@
+<h1><%= @book.name %></h1>
+
+<ul>
+  <%= for page <- @book.pages do %>
+    <li><%= page.text %></li>
+  <% end %>
+</ul>

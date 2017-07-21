@@ -3,7 +3,7 @@ defmodule Testproj.Repo.Migrations.CreateTables do
 
   def change do
     create table(:books) do
-      add :title, :string
+      add :name, :string
     end
 
     create table(:pages) do

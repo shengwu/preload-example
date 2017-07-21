@@ -1,0 +1,7 @@
+<h1>Books</h1>
+
+<ul>
+  <%= for book <- @books do %>
+    <li><%= link book.name, to: book_path(@conn, :show, book.id) %></li>
+  <% end %>
+</ul>
